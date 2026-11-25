@@ -1,0 +1,19 @@
+{
+  "name": "rex-crew",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi extension: spawn and coordinate agents/sub-agents in Rex panes beside the original session, with live progress and result delivery",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}
